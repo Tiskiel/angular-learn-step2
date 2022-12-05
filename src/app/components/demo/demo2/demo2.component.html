@@ -1,0 +1,17 @@
+<h4>Pipes</h4>
+<p>Valeur de monTexte : {{monTexte}}</p>
+<p>UpperCase pipe : {{monTexte | uppercase}}</p>
+<p>LowerCase pipe : {{monTexte | lowercase}}</p>
+<p>TitleCase pipe : {{monTexte | titlecase}}</p>
+
+<p>Valeur de monNombre : {{monNombre}}</p>
+<p>Number pipe : {{monNombre | number : '3.0-2'}}</p>
+<p>Currency pipe : {{monNombre | currency : 'JPY'}}</p>
+
+<p>Valeur de maDAte : {{maDate}}</p>
+<p>Date pipe : {{maDate | date : 'dd:MM/yyyy'}}</p>
+
+<p>Valeur en euro : {{maValeur}}</p>
+<p>Valeur en Bitcoin : {{maValeur | eurtobtc | number : '1.0-8'}}</p>
+
+<p>{{myObject | json}}</p>

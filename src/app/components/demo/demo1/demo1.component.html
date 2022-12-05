@@ -1,0 +1,10 @@
+<h2>Bindings</h2>
+
+<p>Valeur de myprop : {{myprop}}</p>
+<!-- Binding ONE-WAY : Lire la valeur -->
+
+<input type="text" [(ngModel)]="myprop">
+<!-- Two-way binding : lecture + ecriture -->
+<button (click)="changeValue()" [disabled]="myprop.length < 5">Click ici</button>
+<!-- (nomEvent) => Event Binding -->
+<!-- [nomAttribut] => Attribute Binding -->
