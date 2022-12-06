@@ -1,0 +1,37 @@
+<h2>Structural Directives</h2>
+
+<h4>NGIF</h4>
+<p (click)="toggleVisible()">Click ici</p>
+<div *ngIf="isVisible">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eius mollitia aspernatur accusamus quos quisquam modi dolore obcaecati velit ducimus magni ex, cupiditate architecto, sunt ut itaque incidunt impedit dicta.
+</div>
+
+<hr />
+
+<h4>NGFOR</h4>
+<ul>
+  <li *ngFor="let mot of liste2;
+              let i = index;
+              let pair = even">
+   <p [ngClass]="{maClasse : (pair == false)}">{{i}} {{mot.nom}} - {{mot.age}}</p>
+  </li>
+</ul>
+
+<hr />
+<h4>NGSWITCH</h4>
+
+Ma Valeur : <input [(ngModel)]="mavaleur">
+<div [ngSwitch]="mavaleur">
+  <p *ngSwitchCase="1"><app-demo1></app-demo1></p>
+  <p *ngSwitchCase="2"><app-demo2></app-demo2></p>
+  <p *ngSwitchCase="3">Léodagan</p>
+  <p *ngSwitchDefault>Valeur attendue : 1 2 ou 3</p>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />

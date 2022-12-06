@@ -1,0 +1,6 @@
+<h4>Chrono</h4>
+<p>{{time | totime}}</p>
+
+<button (click)="start()" [disabled]="this.timer">Start</button>
+<button (click)="pause()" [disabled]="!this.timer">Pause</button>
+<button (click)="reset()" [disabled]="this.time == 0">Reset</button>
