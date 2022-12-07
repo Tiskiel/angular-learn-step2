@@ -1,3 +1,4 @@
+import { Link } from 'src/app/shared/models/link.model';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DemoMobile2022';
+
+  menu : Link[] = [
+    {title : "Home", url : "home"},
+    {title : "Demo", children :  [
+      {title : "Bindings", url : "demo/demo1"},
+      {title : "Pipes", url : "demo/demo2"},
+      {title : "Directives", url : "demo/demo3"},
+      {title : "@Input/@Output", url : "demo/demo4"},
+    ]},
+    {title : "Exercices", children : [
+      {title : "Chronomètre", url : "exercice/exo1"}
+    ]}
+  ]
 }
