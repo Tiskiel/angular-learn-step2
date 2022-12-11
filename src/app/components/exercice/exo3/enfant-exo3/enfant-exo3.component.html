@@ -1,0 +1,9 @@
+<h4>Votre liste ici :</h4>
+
+
+<ul>
+    <li *ngFor="let item of listeItem; let i = index;">
+        {{item.title}} | {{item.quantityChoice}} <button (click)="removeArticle(i)">-</button> <button
+            (click)="addArticle(i)">+</button>
+    </li>
+</ul>

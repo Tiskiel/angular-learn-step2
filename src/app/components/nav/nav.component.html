@@ -1,13 +1,7 @@
-<!-- <a routerLink="home">Home</a> |
-<a routerLink="demo/demo1">Bindings</a> |
-<a routerLink="demo/demo2">Pipes</a> |
-<a routerLink="demo/demo3">Directives</a> |
-<a routerLink="exercice/exo1">Chrono</a> |
- -->
-
 <ul>
   <li *ngFor="let lien of listeLien; let i = index;">
-    <a [ngClass]="{category : lien.children}" [routerLink]="lien.url" (click)="switchChildrenVisible(i)">{{lien.title}}</a>
+    <a [ngClass]="{category : lien.children}" [routerLink]="lien.url"
+      (click)="switchChildrenVisible(i)">{{lien.title}}</a>
     <ul *ngIf="lien.children && lien.isChildrenVisible">
       <li *ngFor="let sousLien of lien.children">
         <a [routerLink]="sousLien.url">{{sousLien.title}}</a>
@@ -15,3 +9,4 @@
     </ul>
   </li>
 </ul>
+

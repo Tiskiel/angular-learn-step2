@@ -16,6 +16,10 @@ import { TotimePipe } from './shared/totime.pipe';
 import { Demo3Component } from './components/demo/demo3/demo3.component';
 import { Demo4Component } from './components/demo/demo4/demo4.component';
 import { EnfantComponent } from './components/demo/demo4/enfant/enfant.component';
+import { Exo2Component } from './components/exercice/exo2/exo2.component';
+import { EnfantExo2Component } from './components/exercice/exo2/enfant-exo2/enfant-exo2.component';
+import { Exo3Component } from './components/exercice/exo3/exo3.component';
+import { EnfantExo3Component } from './components/exercice/exo3/enfant-exo3/enfant-exo3.component';
 
 
 @NgModule({
@@ -32,12 +36,19 @@ import { EnfantComponent } from './components/demo/demo4/enfant/enfant.component
     TotimePipe,
     Demo3Component,
     Demo4Component,
-    EnfantComponent
+    EnfantComponent,
+    Exo2Component,
+    EnfantExo2Component,
+    Exo3Component,
+    EnfantExo3Component,
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

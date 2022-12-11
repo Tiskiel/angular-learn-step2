@@ -1,0 +1,5 @@
+<h4>Votre shopping liste ci dessous !</h4>
+
+<div *ngFor="let article of listeArticle; let i = index">
+  <span>{{article}}</span><span (click)="envoiReponse(i)"> | X</span>
+</div>

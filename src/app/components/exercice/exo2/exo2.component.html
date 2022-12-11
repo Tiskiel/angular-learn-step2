@@ -1,0 +1,9 @@
+<h1>Exo2 Shopping list</h1>
+
+
+<h4>Entré le nom de votre article !</h4>
+<input type="text" [(ngModel)]="article" />
+
+<button (click)="listeAjoute(article)">Ajouter</button>
+
+<app-enfant-exo2 [listeArticle]="listeArticleParent" (reponseEvent)="receptionIndexToKill($event)"></app-enfant-exo2>
